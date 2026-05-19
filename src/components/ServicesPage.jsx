@@ -76,7 +76,7 @@ const categories = [
   },
   {
     id: "icebath",
-    label: "Ice Bath & Recovery",
+    label: "Ice Bath",
     title: "Ice Bath & Recovery Protocols",
     tagline: "Science-backed recovery systems",
     description: "Recovery is where gains are made. Our recovery suite includes ice baths, contrast therapy, and compression. We build individualised recovery protocols around your training schedule and competition calendar.",
@@ -91,6 +91,24 @@ const categories = [
     duration: "30–60 mins",
     price: "From AED 120",
     color: "#7b68ee",
+  },
+  {
+    id: "physiology",
+    label: "Physiology",
+    title: "Clinical Exercise Physiology",
+    tagline: "Evidence-based exercise programs",
+    description: "Focuses on evidence-based exercise programs for rehabilitation, chronic disease management, and improved physical performance. We provide personalised assessment and training to help individuals move better, recover safely, and enhance overall health and function.",
+    features: [
+      "Personalised physical assessment",
+      "Chronic disease management",
+      "Rehabilitation exercise programs",
+      "Performance enhancement training",
+      "Safe recovery protocols",
+      "Functional health improvement",
+    ],
+    duration: "60 mins",
+    price: "From AED 350",
+    color: "#f5f5f5",
   },
 ];
 

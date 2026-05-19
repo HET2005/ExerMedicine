@@ -32,6 +32,12 @@ const services = [
     description: "Contrast therapy, cryotherapy tubs, and structured recovery protocols backed by the latest sports science research.",
     tag: "Recovery",
   },
+  {
+    num: "06",
+    title: "Clinical Exercise Physiology",
+    description: "Focuses on evidence-based exercise programs for rehabilitation, chronic disease management, and improved physical performance. We provide personalised assessment and training to help individuals move better, recover safely, and enhance overall health and function.",
+    tag: "Physiology",
+  }
 ];
 
 const Services = ({ setPage }) => {
@@ -47,14 +53,14 @@ const Services = ({ setPage }) => {
             Every service at ExerMedicine is designed around one principle — athlete-first. 
             No fluff, no generic programs. Just results.
           </p>
-          <button className="btn-outline" onClick={() => setPage("services")}>
+          <button className="btn-outline" onClick={() => { setPage("services"); window.scrollTo(0,0); }}>
             View All Services →
           </button>
         </div>
 
         <div className="services-list">
           {services.map((svc) => (
-            <div className="service-item" key={svc.num}>
+            <div className="service-item" key={svc.num} onClick={() => { setPage("services"); window.scrollTo(0,0); }}>
               <div className="svc-num">{svc.num}</div>
               <div className="svc-body">
                 <div className="svc-tag">{svc.tag}</div>

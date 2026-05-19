@@ -1,0 +1,171 @@
+.services-page {
+  min-height: 100vh;
+}
+
+.sp-hero {
+  padding: 160px 40px 80px;
+  background: var(--dark);
+  border-bottom: 1px solid var(--border);
+}
+
+.sp-hero-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sp-hero-sub {
+  font-size: 16px;
+  color: rgba(255,255,255,0.5);
+  max-width: 480px;
+  line-height: 1.7;
+  margin-top: 16px;
+  font-weight: 300;
+}
+
+.sp-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 40px 120px;
+}
+
+.sp-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+
+.sp-tab {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: rgba(255,255,255,0.5);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sp-tab:hover {
+  border-color: var(--tc, var(--accent));
+  color: var(--tc, var(--accent));
+}
+
+.sp-tab.active {
+  background: var(--tc, var(--accent));
+  border-color: var(--tc, var(--accent));
+  color: var(--black);
+}
+
+.sp-detail {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.sp-tag {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.sp-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 0.95;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+.sp-desc {
+  font-size: 15px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.sp-meta {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 40px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.sp-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meta-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.meta-val {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.sp-meta-divider {
+  width: 1px;
+  height: 40px;
+  background: var(--border);
+}
+
+.sp-features-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 24px;
+}
+
+.sp-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sp-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  transition: border-color 0.2s;
+}
+
+.sp-features li:hover {
+  border-color: rgba(255,255,255,0.15);
+}
+
+.check {
+  color: var(--fc, var(--accent));
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .sp-detail { grid-template-columns: 1fr; gap: 48px; }
+  .sp-hero { padding: 140px 24px 60px; }
+  .sp-content { padding: 40px 24px 80px; }
+}

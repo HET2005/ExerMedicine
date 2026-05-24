@@ -1,24 +1,50 @@
 import React from "react";
-import labImg from "../assets/lab-testing.jpeg";
+import v1 from "../assets/v1.mp4";
+import v2 from "../assets/v2.mp4";
 import "./Results.css";
 
 const transformations = [
-  { name: "Riya Shah", sport: "Triathlete", result: "Reduced 5K time by 4 mins post biomech fix", before: "Chronic knee pain", after: "Pain-free in 6 weeks" },
-  { name: "Aditya Mehta", sport: "Football", result: "Returned to full training after ACL in 5 months", before: "ACL reconstruction", after: "Stronger than pre-injury" },
-  { name: "Priya Nair", sport: "CrossFit", result: "Deadlift +40kg after corrective S&C", before: "Lower back issues", after: "Competition-ready" },
+  { 
+    name: "Nikankshi", 
+    sport: "Tennis", 
+    result: "Full rehabilitation and return to competitive court movement.", 
+    before: "Complete ACL tear", 
+    after: "Back to tennis" 
+  },
+  { 
+    name: "Shibin", 
+    sport: "Football", 
+    result: "Restored explosive power and cleared for full match play.", 
+    before: "Quadriceps tear", 
+    after: "Back to football" 
+  },
+  { 
+    name: "Abdullah", 
+    sport: "Athletic Performance", 
+    result: "Optimized biomechanics, explosive power, and injury resilience.", 
+    before: "Performance baseline", 
+    after: "Strength & Conditioning peak" 
+  },
 ];
 
 const Results = () => {
   return (
     <section className="results-section" id="results">
       <div className="results-inner">
-        <div className="results-image-col">
-          <div className="results-img-wrap">
-            <img src={labImg} alt="Performance Testing Lab" />
-            <div className="img-label">VO2 Max & Lactate Testing Lab</div>
+        
+{/* Left Column: Side-by-Side Videos */}
+<div className="results-video-grid">
+          <div className="video-wrap">
+            <video src={v1} autoPlay loop muted playsInline className="result-vid"></video>
+            <div className="vid-label">Rehab Phase</div>
+          </div>
+          {/* REMOVE THE "mt-offset" CLASS FROM THIS LINE BELOW */}
+          <div className="video-wrap"> 
+            <video src={v2} autoPlay loop muted playsInline className="result-vid"></video>
+            <div className="vid-label">Return to Play</div>
           </div>
         </div>
-
+        {/* Right Column: Content & Data */}
         <div className="results-content">
           <div className="section-label">Athlete Transformation</div>
           <h2 className="section-title">
@@ -37,12 +63,12 @@ const Results = () => {
                 </div>
                 <div className="t-journey">
                   <div className="t-step before">
-                    <span className="step-label">Before</span>
+                    <span className="step-label">Condition</span>
                     <span>{t.before}</span>
                   </div>
                   <div className="t-arrow">→</div>
                   <div className="t-step after">
-                    <span className="step-label">After</span>
+                    <span className="step-label">Outcome</span>
                     <span>{t.after}</span>
                   </div>
                 </div>

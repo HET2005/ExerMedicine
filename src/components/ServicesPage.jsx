@@ -16,8 +16,8 @@ const categories = [
       "Detailed written report + action plan",
       "Follow-up reassessment included",
     ],
-    duration: "90 mins",
-    price: "From AED 450",
+    duration: "45-60 min",
+    price: "1000/session",
     color: "#e8ff00",
   },
   {
@@ -34,8 +34,8 @@ const categories = [
       "Nutritional guidance integration",
       "Monthly progress testing",
     ],
-    duration: "60 mins/session",
-    price: "From AED 250/session",
+    duration: "60 mins",
+    price: "1250/session",
     color: "#ff4d00",
   },
   {
@@ -52,8 +52,8 @@ const categories = [
       "Post-surgical rehab (ACL, shoulder etc.)",
       "Return-to-sport protocols",
     ],
-    duration: "45–60 mins",
-    price: "From AED 300",
+    duration: "60 mins",
+    price: "1000/session",
     color: "#00d4ff",
   },
   {
@@ -70,8 +70,8 @@ const categories = [
       "Trigger point therapy",
       "Cupping therapy",
     ],
-    duration: "30–90 mins",
-    price: "From AED 180",
+    duration: "90 mins",
+    price: "3000/session",
     color: "#ff9800",
   },
   {
@@ -88,8 +88,8 @@ const categories = [
       "Sleep & HRV coaching",
       "Weekly recovery planning",
     ],
-    duration: "30–60 mins",
-    price: "From AED 120",
+    duration: "15 mins",
+    price: "500/session",
     color: "#7b68ee",
   },
   {
@@ -107,7 +107,7 @@ const categories = [
       "Functional health improvement",
     ],
     duration: "60 mins",
-    price: "From AED 350",
+    price: "1250/session",
     color: "#f5f5f5",
   },
 ];
@@ -162,7 +162,7 @@ const ServicesPage = () => {
               </div>
             </div>
 
-            <button className="btn-primary" onClick={() => window.open("https://wa.me/1234567890", "_blank")}>
+            <button className="btn-primary" onClick={() => window.open("https://wa.me/9537556915", "_blank")}>
               Book This Service ↗
             </button>
           </div>

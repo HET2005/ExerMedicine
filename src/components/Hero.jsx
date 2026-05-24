@@ -13,7 +13,7 @@ const Hero = ({ setPage }) => {
       <div className="hero-content">
         <div className="hero-tag">
           <span className="dot"></span>
-          Performance Centre — Dubai
+          Performance Centre — Bengaluru
         </div>
 
         <h1 className="hero-title">
@@ -27,7 +27,7 @@ const Hero = ({ setPage }) => {
         </p>
 
         <div className="hero-actions">
-          <button className="btn-primary" onClick={() => window.open("https://wa.me/1234567890", "_blank")}>
+          <button className="btn-primary" onClick={() => window.open("https://wa.me/9537556915", "_blank")}>
             Book Assessment ↗
           </button>
           <button className="btn-outline" onClick={() => setPage("services")}>
@@ -42,7 +42,7 @@ const Hero = ({ setPage }) => {
           </div>
           <div className="stat-div"></div>
           <div className="stat">
-            <span className="stat-num">8+</span>
+            <span className="stat-num">10+</span>
             <span className="stat-label">Years Experience</span>
           </div>
           <div className="stat-div"></div>

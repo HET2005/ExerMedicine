@@ -31,9 +31,7 @@ const Header = ({ page, setPage }) => {
           <a href="#testimonials">Results</a>
         </nav>
 
-        <button className="btn-primary nav-cta" onClick={() => {
-          window.open("https://wa.me/1234567890", "_blank");
-        }}>Book Now</button>
+    
 
         <button className="burger" onClick={() => setMenuOpen(!menuOpen)}>
           <span></span><span></span><span></span>

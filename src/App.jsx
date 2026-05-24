@@ -7,6 +7,7 @@ import Results from "./components/Results";
 import WhyUs from "./components/WhyUs";
 import Team from "./components/Team";
 import Testimonials from "./components/Testimonials";
+import Location from "./components/Location";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -26,6 +27,7 @@ const App = () => {
           <WhyUs />
           <Team />
           <Testimonials />
+          <Location />
           <CTA />
         </>
       ) : (

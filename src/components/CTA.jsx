@@ -17,10 +17,10 @@ const CTA = () => {
             and build the exact roadmap to get there.
           </p>
           <div className="cta-actions">
-            <button className="btn-primary" onClick={() => window.open("https://wa.me/1234567890", "_blank")}>
+            <button className="btn-primary" onClick={() => window.open("https://wa.me/9611224751", "_blank")}>
               Book on WhatsApp ↗
             </button>
-            <a href="tel:+971000000000" className="btn-outline">Call Us</a>
+            <a href="tel:+91 9611224751" className="btn-outline">Call Us</a>
           </div>
         </div>
         <div className="cta-accent-bar"></div>

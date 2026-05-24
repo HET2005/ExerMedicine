@@ -1,0 +1,121 @@
+.location-section {
+    padding: 120px 40px;
+    background: var(--black); /* Pitch black for maximum contrast */
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  
+  .location-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  
+  .location-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .location-details {
+    margin-bottom: 32px;
+    padding-left: 16px;
+    border-left: 2px solid rgba(255,255,255,0.1);
+    transition: border-color 0.3s ease;
+  }
+  
+  .location-details:hover {
+    border-color: var(--accent);
+  }
+  
+  .detail-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  
+  .detail-text {
+    font-size: 16px;
+    color: var(--white);
+    line-height: 1.6;
+    font-weight: 300;
+  }
+  
+  .hours-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .hours-list li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: var(--white);
+    font-weight: 300;
+    padding: 4px 0;
+  }
+  
+  .hours-time {
+    color: rgba(255,255,255,0.6);
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .map-btn {
+    margin-top: 20px;
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--border);
+  }
+  
+  .map-btn:hover {
+    background: var(--white);
+    color: var(--black);
+  }
+  
+  /* Map Styling */
+  .location-map-wrap {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border: 1px solid var(--border);
+    background: #111;
+    overflow: hidden;
+  }
+  
+  .location-iframe {
+    filter: grayscale(100%) contrast(1.1) brightness(0.7);
+    transition: filter 0.5s ease;
+  }
+  
+  .location-map-wrap:hover .location-iframe {
+    filter: grayscale(0%) contrast(1) brightness(0.9);
+  }
+  
+  .map-overlay-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent);
+  }
+  
+  @media (max-width: 1000px) {
+    .location-inner { grid-template-columns: 1fr; gap: 48px; }
+    .location-map-wrap { height: 400px; }
+  }
+  
+  @media (max-width: 600px) {
+    .location-section { padding: 80px 24px; }
+    .location-map-wrap { height: 350px; }
+  }
